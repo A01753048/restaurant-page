@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*,
+*::before,
+*::after,
+*:after,
+*:before {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: beige;
+    --secondary-color: black;
+}
+
+html {
+    font-family: "Titillium Web", sans-serif;
+    color: var(--main-color)
+}
+
+body {
+    background-size: cover;
+    background: url("assets/mama-mia-logo.jpeg") var(--secondary-color) no-repeat top center;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    opacity: 70%;
+}
+
+nav {
+    height: 100%;
+}
+
+.nav-button {
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: 100%;
+    color: var(--main-color);
+    font-size: 1.3em;
+    transition: all 100ms ease-in;
+}
+
+.nav-button:hover {
+    background-color: #4b4b4b;
+    cursor: pointer;
+}
+
+#content {
+
+}
+
+#logo-container {
+    height: 90vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 7em;
+}
+
+#slogan {
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+}
+
+.description {
+    margin: 50px 25%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#location-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    height: 300px;
+    width: 300px;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
